@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 01_Getting_Started_with_C</Text>
+    <Description>Some description for 01_Getting_Started_with_C</Description>
+    <Assembly>01_Getting_Started_with_C.dll</Assembly>
+    <FullClassName>_01_Getting_Started_with_C.CmdSkills01</FullClassName>
+    <ClientId>6119e5bd-875b-4a24-91d0-99d620368e48</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 01_Getting_Started_with_C</Name>
+    <Assembly>01_Getting_Started_with_C.dll</Assembly>
+    <FullClassName>_01_Getting_Started_with_C.App</FullClassName>
+    <ClientId>81c97fe9-5b47-4dc7-b867-9ad737e60ccc</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
