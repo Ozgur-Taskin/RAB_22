@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RAB_22</Text>
+    <Description>Some description for RAB_22</Description>
+    <Assembly>RAB_22.dll</Assembly>
+    <FullClassName>RAB_22.Command</FullClassName>
+    <ClientId>c0715061-b5d5-458e-b915-48dcdcab99ac</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAB_22</Name>
+    <Assembly>RAB_22.dll</Assembly>
+    <FullClassName>RAB_22.App</FullClassName>
+    <ClientId>82ba8bb5-6c5e-48f3-a7aa-42f41f0cba54</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
