@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 02_Working_with_External_Data</Text>
+    <Description>Some description for 02_Working_with_External_Data</Description>
+    <Assembly>02_Working_with_External_Data.dll</Assembly>
+    <FullClassName>_02_Working_with_External_Data.Command</FullClassName>
+    <ClientId>c9a46dee-93c1-47a2-8df5-21aeb15b41bb</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 02_Working_with_External_Data</Name>
+    <Assembly>02_Working_with_External_Data.dll</Assembly>
+    <FullClassName>_02_Working_with_External_Data.App</FullClassName>
+    <ClientId>c527d456-5c7b-486c-ac57-cb55d779b222</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
