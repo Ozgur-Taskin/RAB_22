@@ -25,32 +25,60 @@ namespace _02_Working_with_External_Data
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            // Access current selection
+            //create an array
+            string[] myStringArray = new string[4];
+            //add items to array
+            myStringArray[0] = "Array 1";
+            myStringArray[1] = "Array 2";
+            myStringArray[2] = "Array 3";
+            myStringArray[3] = "Array 4";
 
-            Selection sel = uidoc.Selection;
+            //create a list
+            List<string> myStringList = new List<string>();
+            //add items to list
+            myStringList.Add("List 1");
+            myStringList.Add("List 2");
+            myStringList.Add("List 3");
+            myStringList.Add("List 4");
+            //remove item from list
+            myStringList.RemoveAt(0);
 
-            // Retrieve elements from database
+            //create a list contains array items
+            List<string[]> myArrayList = new List<string[]>();
+            //add an array item to the list
+            myArrayList.Add(myStringArray);
 
-            FilteredElementCollector col
-              = new FilteredElementCollector(doc)
-                .WhereElementIsNotElementType()
-                .OfCategory(BuiltInCategory.INVALID)
-                .OfClass(typeof(Wall));
-
-            // Filtered element collector is iterable
-
-            foreach (Element e in col)
+            //show items in array
+            foreach(string str in myStringArray)
             {
-                Debug.Print(e.Name);
+                TaskDialog.Show("Array", str);
             }
 
-            // Modify document within a transaction
-
-            using (Transaction tx = new Transaction(doc))
+            //show items in list
+            foreach(string str in myStringList)
             {
-                tx.Start("Transaction Name");
-                tx.Commit();
+                TaskDialog.Show("List", str);
             }
+
+            //merge items in Array List
+            string fullStr = "";
+
+            foreach (string[] strArray in myArrayList)
+            {
+                
+
+                foreach(string str in strArray)
+                {
+                    fullStr = fullStr + " - " + str;
+                } 
+                
+                //show string on immediate window
+                Debug.Print(fullStr);
+            }
+
+            //show merged string
+            TaskDialog.Show("Merged Array", fullStr);
+
 
             return Result.Succeeded;
         }
