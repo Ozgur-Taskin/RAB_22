@@ -10,6 +10,15 @@
 		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
 	</AddIn>
 	<AddIn Type="Command">
+		<Text>CCreate Level And Sheet</Text>
+		<Description>Some description for 02_Working_with_External_Data</Description>
+		<Assembly>02_Working_with_External_Data.dll</Assembly>
+		<FullClassName>_02_Working_with_External_Data.CreateLevelAndSheet</FullClassName>
+		<ClientId>C43EB6F8-1750-4EAA-B0C5-33EF23636D6B</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
+	<AddIn Type="Command">
 		<Text>Read Data</Text>
 		<Description>Some description for 02_Working_with_External_Data</Description>
 		<Assembly>02_Working_with_External_Data.dll</Assembly>
