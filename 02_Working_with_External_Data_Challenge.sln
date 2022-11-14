@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Working_with_External_Data_Challenge", "02_Working_with_External_Data_Challenge\02_Working_with_External_Data_Challenge.csproj", "{C2B77202-3D65-4B5A-9C90-35900E72BBCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B77202-3D65-4B5A-9C90-35900E72BBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B77202-3D65-4B5A-9C90-35900E72BBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B77202-3D65-4B5A-9C90-35900E72BBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B77202-3D65-4B5A-9C90-35900E72BBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A81E320D-087A-41CF-995C-FB84C0F8D291}
+	EndGlobalSection
+EndGlobal

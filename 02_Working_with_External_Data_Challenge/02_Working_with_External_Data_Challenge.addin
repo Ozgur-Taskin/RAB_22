@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 02_Working_with_External_Data_Challenge</Text>
+    <Description>Some description for 02_Working_with_External_Data_Challenge</Description>
+    <Assembly>02_Working_with_External_Data_Challenge.dll</Assembly>
+    <FullClassName>_02_Working_with_External_Data_Challenge.Command</FullClassName>
+    <ClientId>c9eda730-a108-4d55-869f-cbd500093587</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 02_Working_with_External_Data_Challenge</Name>
+    <Assembly>02_Working_with_External_Data_Challenge.dll</Assembly>
+    <FullClassName>_02_Working_with_External_Data_Challenge.App</FullClassName>
+    <ClientId>4ae5ff4f-8f06-4ed6-98c0-85c7583fc90f</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
