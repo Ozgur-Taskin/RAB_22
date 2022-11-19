@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 03_Creating_Views_and_Sheets</Text>
+    <Description>Some description for 03_Creating_Views_and_Sheets</Description>
+    <Assembly>03_Creating_Views_and_Sheets.dll</Assembly>
+    <FullClassName>_03_Creating_Views_and_Sheets.Command</FullClassName>
+    <ClientId>664cc834-8a4e-4e59-952c-d58a8763fa3c</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 03_Creating_Views_and_Sheets</Name>
+    <Assembly>03_Creating_Views_and_Sheets.dll</Assembly>
+    <FullClassName>_03_Creating_Views_and_Sheets.App</FullClassName>
+    <ClientId>1737993f-8086-41cb-84ea-d8f16b3b832e</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
