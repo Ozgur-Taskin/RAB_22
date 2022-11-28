@@ -76,9 +76,14 @@ namespace _03_Creating_Views_and_Sheets
             vftCollector.OfClass(typeof(ViewFamilyType));
 
             //collector for title block type id
-            FilteredElementCollector tCollector = new FilteredElementCollector(doc);
-            tCollector.OfCategory(BuiltInCategory.OST_TitleBlocks);
-            ElementId tBlockId = tCollector.FirstElementId();
+            //FilteredElementCollector tCollector = new FilteredElementCollector(doc);
+            //tCollector.OfCategory(BuiltInCategory.OST_TitleBlocks);
+            //ElementId tBlockId = tCollector.FirstElementId();
+            Element tBlockElement = GetTitleBlockByName(doc, "New Titleblock");
+            ElementId tBlockId = tBlockElement.GetTypeId();
+
+            //titleblock name test
+            TaskDialog.Show("Titleblock Name", tBlockElement.Name);
 
             //create variables for viewFamilyTypes
             ViewFamilyType planVFT = null;
@@ -125,11 +130,27 @@ namespace _03_Creating_Views_and_Sheets
             Viewport newViewPort = Viewport.Create(doc, newSheet.Id, newPlanView.Id, insertPoint);
             Viewport newCeilingViewPort = Viewport.Create(doc, newCeilingSheet.Id, newRCPPView.Id, insertPoint);
 
-
             tran.Commit();
             tran.Dispose();
 
             return Result.Succeeded;
+        }
+
+        //get element by name method
+        internal Element GetTitleBlockByName(Document doc, string name)
+        {
+            FilteredElementCollector tCollector = new FilteredElementCollector(doc);
+            tCollector.OfCategory(BuiltInCategory.OST_TitleBlocks);
+
+            foreach(Element currentTblock in tCollector)
+            {
+                if (currentTblock.Name == name)
+                {
+                    return currentTblock;
+                }
+            }
+
+            return null;
         }
 
         //create a struct
