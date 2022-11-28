@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Text>Command 03_Project_Setup_Challenge</Text>
+		<Description>Some description for 03_Project_Setup_Challenge</Description>
+		<Assembly>03_Project_Setup_Challenge.dll</Assembly>
+		<FullClassName>_03_Project_Setup_Challenge.Command</FullClassName>
+		<ClientId>2ebccc4b-87b2-4b9e-891a-8183ab076eb7</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
+	<AddIn Type="Command">
+		<Text>Project_Setup</Text>
+		<Description>Some description for 03_Project_Setup_Challenge</Description>
+		<Assembly>03_Project_Setup_Challenge.dll</Assembly>
+		<FullClassName>Project_Setup</FullClassName>
+		<ClientId>6A06EC51-25B7-49AF-9C67-2E33226D753A</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
+	<AddIn Type="Application">
+		<Name>Application 03_Project_Setup_Challenge</Name>
+		<Assembly>03_Project_Setup_Challenge.dll</Assembly>
+		<FullClassName>_03_Project_Setup_Challenge.App</FullClassName>
+		<ClientId>4234cd36-e15a-419f-91b7-c7ea31db2eb1</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>
