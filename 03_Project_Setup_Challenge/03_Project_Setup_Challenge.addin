@@ -13,7 +13,7 @@
 		<Text>Project_Setup</Text>
 		<Description>Some description for 03_Project_Setup_Challenge</Description>
 		<Assembly>03_Project_Setup_Challenge.dll</Assembly>
-		<FullClassName>Project_Setup</FullClassName>
+		<FullClassName>_03_Project_Setup_Challenge.Project_Setup</FullClassName>
 		<ClientId>6A06EC51-25B7-49AF-9C67-2E33226D753A</ClientId>
 		<VendorId>com.typepad.thebuildingcoder</VendorId>
 		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
