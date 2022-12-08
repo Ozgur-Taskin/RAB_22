@@ -2,6 +2,8 @@
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
+using Autodesk.Revit.DB.Architecture;
+using Autodesk.Revit.DB.Structure;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System;
@@ -25,33 +27,41 @@ namespace _05_Inserting_Families
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            // Access current selection
+            //call the static class and static method
+            //it's a static class we don't need to create an instance of the class
+            Utils.StaticMethodTest("This is the value");
 
-            Selection sel = uidoc.Selection;
+            //insert family
+            //we willinsert the family to the room point
+            //filter rooms
+            FilteredElementCollector col = new FilteredElementCollector(doc);
+            col.OfCategory(BuiltInCategory.OST_Rooms);
 
-            // Retrieve elements from database
-
-            FilteredElementCollector col
-              = new FilteredElementCollector(doc)
-                .WhereElementIsNotElementType()
-                .OfCategory(BuiltInCategory.INVALID)
-                .OfClass(typeof(Wall));
-
-            // Filtered element collector is iterable
-
-            foreach (Element e in col)
+            //transaction
+            using(Transaction t = new Transaction(doc))
             {
-                Debug.Print(e.Name);
+                t.Start("Inset Family");
+                //get location point and insert a family to all the rooms
+                foreach (SpatialElement room in col)
+                {
+                    //get room location
+                    Location loc = room.Location;
+                    //get the location point
+                    //room has locationpoint 
+                    LocationPoint locPoint = loc as LocationPoint;
+                    //assignt the location point value to a variable to use it inserting family
+                    XYZ roomPoint = locPoint.Point;
+
+                    //get family symbol
+                    FamilySymbol myFS = Utils.GetFamilySymbolByName_Family(doc, "Furniture_Desk", "1830x915mm");
+                    //place family
+                    FamilyInstance myInstance = doc.Create.NewFamilyInstance(roomPoint, 
+                        myFS, StructuralType.NonStructural);
+                }
+
+                t.Commit();
+                //don't need to dispose, it will dipose automatically
             }
-
-            // Modify document within a transaction
-
-            using (Transaction tx = new Transaction(doc))
-            {
-                tx.Start("Transaction Name");
-                tx.Commit();
-            }
-
             return Result.Succeeded;
         }
     }
