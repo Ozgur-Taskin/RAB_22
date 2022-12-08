@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 05_Inserting_Families</Text>
+    <Description>Some description for 05_Inserting_Families</Description>
+    <Assembly>05_Inserting_Families.dll</Assembly>
+    <FullClassName>_05_Inserting_Families.Command</FullClassName>
+    <ClientId>76a5b0de-d1e3-4c99-8ab1-c1caa1fc7824</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 05_Inserting_Families</Name>
+    <Assembly>05_Inserting_Families.dll</Assembly>
+    <FullClassName>_05_Inserting_Families.App</FullClassName>
+    <ClientId>e5cc3320-7bc8-4a89-9bcd-5d690b69a4df</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
