@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command 05_Challenge</Text>
+    <Description>Some description for 05_Challenge</Description>
+    <Assembly>05_Challenge.dll</Assembly>
+    <FullClassName>_05_Challenge.Command</FullClassName>
+    <ClientId>d88ca0b1-d444-4569-9987-0a63389777bd</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application 05_Challenge</Name>
+    <Assembly>05_Challenge.dll</Assembly>
+    <FullClassName>_05_Challenge.App</FullClassName>
+    <ClientId>6d4d4dbd-f480-4067-84cf-8e445759a802</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
