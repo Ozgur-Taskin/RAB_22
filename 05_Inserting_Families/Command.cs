@@ -57,6 +57,11 @@ namespace _05_Inserting_Families
                     //place family
                     FamilyInstance myInstance = doc.Create.NewFamilyInstance(roomPoint, 
                         myFS, StructuralType.NonStructural);
+
+                    //set parameter value
+                    Utils.SetParameterValue(room, "Ceiling Finish", "ACT");
+                    string roomName =  Utils.GetParameterValueAsString(room, "Name");
+                    TaskDialog.Show("Room Name", roomName);
                 }
 
                 t.Commit();

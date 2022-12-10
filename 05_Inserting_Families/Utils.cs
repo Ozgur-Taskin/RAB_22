@@ -63,5 +63,48 @@ namespace _05_Inserting_Families
             
             return null;
         }
+
+        public static void SetParameterValue(Element curElement, string paramName, string paramValue)
+        {
+            //get parameter. Returns a list
+            IList<Parameter> paramList = curElement.GetParameters(paramName);
+
+            //If you have multiple parameters with the same name you can assign the value to all
+            foreach(Parameter param in paramList)
+            {
+                param.Set(paramValue);
+            }
+        }
+
+        public static void SetParameterValueBuiltIn(Element curElement, string paramName, string paramValue)
+        {
+            //get parameter.
+            Parameter curParam = curElement.get_Parameter(BuiltInParameter.ROOM_AREA);
+
+            //check if the parameter exist
+            //set the parameter
+            if(curParam != null)
+            {
+                curParam.Set(paramValue);
+            }
+        }
+
+        public static string GetParameterValueAsString(Element curElement, string paramName)
+        {
+            //create return value variable
+            string returnValue = "";
+
+            //get parameter. Returns a list
+            IList<Parameter> paramList = curElement.GetParameters(paramName);
+
+            //get the first element from parameter list.
+            //Most likely there will be just one parameter in the list
+            Parameter myParam = paramList[0];
+
+            //get the return value
+            returnValue = myParam.AsValueString();
+
+            return returnValue;
+        }
     }
 }
