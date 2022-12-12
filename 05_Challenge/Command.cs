@@ -102,6 +102,13 @@ namespace _05_Challenge
                                             FamilySymbol famSym = Utils.GetFamilySymbolByName(doc,
                                                 revFamName, revFamType);
 
+                                            //family can be loaded to the revit model but 
+                                            //it doesn't mean revit api loaded the geometry to the memory
+                                            if(famSym.IsActive == false)
+                                            {
+                                                famSym.Activate();
+                                            }
+
                                             //place family
                                             FamilyInstance newInstance = doc.Create.NewFamilyInstance(roomPoint, famSym,
                                                 StructuralType.NonStructural);
@@ -116,7 +123,5 @@ namespace _05_Challenge
             }
             return Result.Succeeded;
         }
-
-
     }
 }
