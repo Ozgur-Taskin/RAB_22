@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-  <AddIn Type="Command">
-    <Text>Command 06_Challenge</Text>
-    <Description>Some description for 06_Challenge</Description>
-    <Assembly>06_Challenge.dll</Assembly>
-    <FullClassName>_06_Challenge.Command</FullClassName>
-    <ClientId>c9e726ec-1e83-4686-b28f-76941b58ef41</ClientId>
-    <VendorId>com.typepad.thebuildingcoder</VendorId>
-    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
-  </AddIn>
   <AddIn Type="Application">
     <Name>Application 06_Challenge</Name>
     <Assembly>06_Challenge.dll</Assembly>
