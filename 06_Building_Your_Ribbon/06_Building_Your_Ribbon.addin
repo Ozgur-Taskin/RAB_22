@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-  <AddIn Type="Command">
-    <Text>Command 06_Building_Your_Ribbon</Text>
-    <Description>Some description for 06_Building_Your_Ribbon</Description>
-    <Assembly>06_Building_Your_Ribbon.dll</Assembly>
-    <FullClassName>_06_Building_Your_Ribbon.Command</FullClassName>
-    <ClientId>99f32f4f-3c9f-4d83-819f-ea370ddbb333</ClientId>
-    <VendorId>com.typepad.thebuildingcoder</VendorId>
-    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
-  </AddIn>
   <AddIn Type="Application">
     <Name>Application 06_Building_Your_Ribbon</Name>
     <Assembly>06_Building_Your_Ribbon.dll</Assembly>
